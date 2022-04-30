@@ -1,15 +1,16 @@
 {
   "name": "get-current-track",
   "author": "Daniel Soares <daniel.soares@me.com>",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "type": "module",
-  "dependencies": {
-    "@prisma/client": "^3.12.0",
-    "dayjs": "^1.11.1",
-    "run-applescript": "^6.0.0"
+  "scripts": {
+    "start": "node ./index.js"
   },
-  "devDependencies": {
-    "prisma": "^3.12.0"
+  "dependencies": {
+    "dayjs": "^1.11.1",
+    "dotenv": "^16.0.0",
+    "ioredis": "^5.0.4",
+    "run-applescript": "^6.0.0"
   }
 }

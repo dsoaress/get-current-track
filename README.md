@@ -20,7 +20,6 @@ Install dependencies
 
 ```bash
   yarn install
-  yarn prisma generate
 ```
 
 Start the server
@@ -34,7 +33,8 @@ Start the server
 Install as a service
 
 ```bash
+  npm install babel-cli -g
   npm install pm2 -g
-  pm2 start index.js
+  pm2 start --interpreter babel-node index.js
   pm2 save
 ```
